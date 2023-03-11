@@ -1,0 +1,248 @@
+:root{
+    --main-radius: 5px;
+    --main-padding: 2px;
+    --pink: #F7F0F9;
+    --purple: #DAD7EA;
+    --blue: #C9E0F8;
+    --yellow: #FFFDD6;
+}
+.container{
+    background-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0fr 0fr 0fr 0fr 0fr 0fr;
+    grid-template-areas: 
+    "nav nav nav"
+    "main main main"
+    "experience blogs hobbies"
+    "research research research"
+    "collection collection collection"
+    "footer footer footer"
+    ;
+
+    grid-gap: 0.5rem;
+
+}
+#anav{
+    text-decoration: none;
+    color: white;
+}
+#anav:hover{
+    background-color: #e4eefa;
+    color: black;
+    padding: 7px;
+}
+nav{
+    
+    background-color: #415A77;
+    font-family: 'Bebas Neue', cursive;
+    padding: 7px;
+    grid-area: nav;
+    height: 56px;
+    border-radius: 11px;
+}
+.nav{
+    height: 58px;
+    
+
+}
+#tname{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    display: inline-block;
+    width: 30%;
+    height: 62px;
+    font-size: 32px;
+    padding-top: 6px;
+    padding-left: 27px;
+}
+#navbar{
+    color: white;
+    display: inline-block;
+    /* padding-right: 1px; */
+    font-size: 23px;
+    padding-left: 2px;
+    width: 66%;
+    text-align: right;
+}
+#ae{
+    margin: 0;
+}
+.main{
+    background-color: black;
+    height: 663px;
+    grid-area: main;
+    border-radius: 11px;
+}
+#pic{
+    height: 22em;
+    width: 50em;
+}
+#main-img{
+    height: 25em;
+    width: 48em;
+}
+#desc{
+    color: #E9ECEF;
+    padding-top: 50px;
+    padding-left: 43px;
+    padding-right: 43px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.experience{
+    /* background-color: #778DA9; */
+    background-color: #CED4DA;
+    color: black;   
+    font-size: 20px;
+    height: 362px;
+    border-radius: 11px;
+    grid-area: experience;
+}
+#headings{
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    padding-left: 14px;
+    text-shadow: 1px 2px 4px #555353;
+    margin-top: 18px;
+}
+#content1{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    text-align: justify;
+    padding-left: 21px;
+    padding-right: 21px;
+    color: black;
+    line-height: 1.3;
+    font-size: 18px;
+}
+.blogs{
+    background-color: #CED4DA;  
+    font-size: 20px;
+    height: 362px;
+    border-radius: 11px;
+    grid-area: blogs;
+    color: black;
+}
+#ablogs{
+    color: black;
+}
+#ablogs:hover {
+    background-color: #F1FAEE;
+    padding: 7px;
+}
+.hobbies{
+    background-color: #CED4DA;  
+    font-size: 20px;
+    height: 362px;
+    border-radius: 11px;
+    grid-area: hobbies;
+}
+.research{
+    /* background-color: #CED4DA;  */
+    background-color: #ADB5BD; 
+    font-size: 20px;
+    border-radius: 11px;
+    grid-area: research;
+    color: black;
+    height: 550px;
+}
+.research-image{
+    height: 300px;
+    width: 232px;
+}
+.research-title{
+    width: 100%;
+    height: 20px;
+}
+.research-image1{
+    height: 300px;
+    width: 245px;
+}
+#research-redirection{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+}
+#research-redirection:hover {
+    background-color: #F1FAEE;
+    padding: 5px;
+    height: fit-content;
+}
+.row1{
+    height: 436px;
+    width: 85%;
+    padding-left: 80px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    left: 40px;
+}
+#rw1{
+    height: 361px;
+    width: 244px;
+}
+#rw2{
+    height: 361px;
+    width: 244px;
+}
+#rw3{
+    height: 361px;
+    width: 244px;
+}
+.collection{
+    height: 1644px;
+    grid-area: collection;
+    /* background-color: #908c87; */
+    /* background-color: #CED4DA; */
+    background-color: #c5d3e5;
+    border-radius: 11px;
+}
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+    gap: 10px;
+  } 
+.image-gallery > li {
+    flex-basis: 350px; /*width: 350px;*/
+    position: relative;
+    cursor: pointer;
+    list-style-type: none;
+  }
+  
+.image-gallery::after {
+    content: "";
+    flex-basis: 350px;
+} 
+.image-gallery li img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+    height: 100%;
+    border: black 2px solid;
+}
+.footer{
+    height: 179px;
+    background-color: #415A77;
+    border-radius: 11px;
+    grid-area: footer;
+}
+#fheadings{
+    color: white;
+    font-size: 34px;
+    margin-left: 38px;
+    font-family: 'Dancing Script', cursive;
+}
+#signature{
+    color: white;
+    float: right;
+    margin-right: 79px;
+}
